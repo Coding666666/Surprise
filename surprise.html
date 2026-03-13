@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>Happy Birthday Eliza</title>
+
+<style>
+body{
+    background: linear-gradient(#ffe6f0,#ffd6eb);
+    font-family: Arial, sans-serif;
+    text-align:center;
+    padding-top:80px;
+}
+
+<style>
+body{
+    background: linear-gradient(#ffe6f0,#ffd6eb);
+    font-family: Arial, sans-serif;
+    text-align:center;
+    padding-top:80px;
+}
+
+h1{
+    color:#ff3c78;
+    font-size:40px;
+}
+
+.flower{
+    font-size:80px;
+    margin:20px;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#ff3c78;
+    color:white;
+    cursor:pointer;
+}
+
+#message{
+    display:none;
+    margin-top:30px;
+    font-size:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#333;
+    line-height:1.6;
+}
+
+.heart{
+    position:absolute;
+    font-size:24px;
+    animation:float 3s linear forwards;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);opacity:1;}
+    100%{transform:translateY(-200px);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎉 Happy Birthday Eliza 🎉</h1>
+
+<div class="flower">🌸</div>
+
+<p>A small flower for someone who makes the world a little brighter.</p>
+
+<button onclick="surprise()">Click me</button>
+
+<div id="message">
+Today is lowkey your birthday and I thought I would make you a little website to show my appreciation or sum shi you know 😭😭.<br><br>
+
+You're literally so amazing and I know I've told you that before but I'm SO FOR REAL like you're genuinely such an amazing person and you're so kind and the fact that you got scammed and manipulated by those evil people PISSES ME OFF SO BAD LIKE YOU DIDN'T DESERVE THAT BRUH BUT I'M LOWKEY GONNA TRY MY BEST TO HELP YOU EVEN IF IT'S NOT MUCH. ♥️<br><br>
+
+— Abde ~~
+</div>
+
+<script>
+function surprise(){
+
+document.getElementById("message").style.display="block";
+
+for(let i=0;i<20;i++){
+    let heart=document.createElement("div");
+    heart.innerHTML="❤️";
+    heart.className="heart";
+    heart.style.left=Math.random()*window.innerWidth+"px";
+    heart.style.top=(window.innerHeight-50)+"px";
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{heart.remove();},3000);
+}
+
+}
+</script>
+
+</body>
+</html>
